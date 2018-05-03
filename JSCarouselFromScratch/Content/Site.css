@@ -88,3 +88,33 @@ body {
     background-position: center;
     background-repeat: no-repeat;
 }
+
+/*text boxes inside carousel*/
+
+.main-banner .imgban-box h2{
+    font-family:Arial;
+    font-size:60px;
+    color: #fff;
+}
+
+.main-banner .imgban-box p {
+    padding-top:6px;
+    font-family: Arial;
+    font-size: 16px;
+    color: #fff;
+}
+
+.main-banner #imgban3 .imgban-box{
+    padding-top:220px;
+    padding-left:100px;
+}
+.main-banner #imgban2 .imgban-box {
+    padding-top: 220px;
+    padding-right: 100px;
+    float:right;
+    text-align:right;
+}
+.main-banner #imgban2 .imgban-box {
+    padding-top: 70px;
+    padding-left: 100px;
+}
