@@ -46,3 +46,45 @@ body {
         background-position: center;
         background-repeat: no-repeat;
     }
+
+    /*styling for button*/
+
+    .imgbanbtn{
+        width:30px;
+        height:30px;
+        background-color: rgba(0,0,0,0);
+        border-radius: 4px;
+        position:absolute;
+        top:180px;
+        z-index: 2000;
+        opacity:0.8;
+        cursor:pointer;
+    }
+.imgbanbtn:hover {
+    width: 30px;
+    height: 30px;
+    background-color: #000;
+    border-radius: 4px;
+    position: absolute;
+    top: 180px;
+    z-index: 2000;
+    opacity: 0.9;
+    cursor: pointer;
+}
+
+.imgbanbtn-prev {
+    left: 5px;
+    background-image: url('rightarrow.png');
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+    -webkit-transform: rotate(180deg);
+    transform: rotate(180deg);
+}
+.imgbanbtn-next {
+    right: 5px;
+    background-image: url('rightarrow.png');
+    background-size: 60%;
+    background-position: center;
+    background-repeat: no-repeat;
+}
