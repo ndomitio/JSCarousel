@@ -1,6 +1,7 @@
 ﻿@{
     ViewBag.Title = "Home Page";
 }
+<link href="~/Home.css" rel="stylesheet" />
 
 <html>
 <head>
@@ -12,11 +13,52 @@
         @*div for arrow*@
         <div class="imgbanbtn imgbanbtn-prev" id="imgbanbtn-prev"></div>
         @*divs for pictures*@
+
         <div class="imgban" id="imgban3">
-            <div class="imgban-box">
-                <h2>PART 3</h2>
+                <div class="imgban-box">
+                    <h2>PART 3</h2>
+                </div>
             </div>
-        </div>
+
+        @*<div class="imgban" id="imgban3">
+            <div class="untitled__slides">
+                <div class="untitled__slide">
+                    <div class="untitled__slideBg"></div>
+                    <div class="untitled__slideContent">
+                        <a class="button" style="font-size:30px;" href="@Url.Action("Index", "Accessories")">Accessories</a>
+                        <span></span>
+                        <a class="button" href="@Url.Action("Index", "Outfits")">Check out outfits</a>
+                    </div>
+                </div>
+                <div class="untitled__slide">
+                    <div class="untitled__slideBg"></div>
+                    <div class="untitled__slideContent">
+                        <a class="button" style="font-size:30px;" href="@Url.Action("Index", "Shoes")">Shoes</a>
+                        <span></span>
+                        <a class="button" href="@Url.Action("Index", "Outfits")" target="/black">Check out outfits</a>
+                    </div>
+                </div>
+                <div class="untitled__slide">
+                    <div class="untitled__slideBg"></div>
+                    <div class="untitled__slideContent">
+                        <a class="button" style="font-size:30px;" href="@Url.Action("Index", "Tops")">Tops</a>
+                        <span></span>
+                        <a class="button" href="@Url.Action("Index", "Outfits")" target="/black">Check out outfits</a>
+                    </div>
+                </div>
+                <div class="untitled__slide">
+                    <div class="untitled__slideBg"></div>
+                    <div class="untitled__slideContent">
+                        <a class="button" style="font-size:30px;" href="@Url.Action("Index", "Bottoms")">Bottoms</a>
+                        <span></span>
+                        <a class="button" href="@Url.Action("Index", "Outfits")">Check out outfits</a>
+                    </div>
+                </div>
+            </div>
+            <div class="untitled__shutters"></div>
+        </div>*@
+
+
         <div class="imgban" id="imgban2">
             <div class="imgban-box">
                 <h2>PART 2</h2>
@@ -35,7 +77,7 @@
     <script>
         //keeps track of banner img
         var bannerStatus = 1;
-        var bannerTimer = 4000;
+        var bannerTimer = 2000;
         //to run bannerLoop once onload
         window.onload = function () {
             bannerLoop();
